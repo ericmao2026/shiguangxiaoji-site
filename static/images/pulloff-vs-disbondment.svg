@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 390" width="680" height="390" role="img" aria-label="拉拔附着力与阴极剥离的受力方向对比示意图">
+  <defs>
+    <style>
+      .lb{font:14px -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;fill:#1f4e5f}
+      .sm{font:12px -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;fill:#7a7a7a}
+      .mn{font:13px -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;fill:#3d5a64}
+      .kd{font:12px -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;fill:#1f4e5f}
+      .steel{fill:#e8e4da}
+      .coat{fill:#1f4e5f}
+      .gold{stroke:#c8862b;stroke-width:2.4;fill:none;stroke-linecap:round}
+      .fnt{stroke:#b9b3a6;stroke-width:1.1;stroke-dasharray:4 4;fill:none}
+      .cut{stroke:#c0392b;stroke-width:1.5;fill:none}
+    </style>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto">
+      <path d="M0,0 L7,3.2 L0,6.4 z" fill="#c8862b"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="680" height="390" fill="#fff"/>
+
+  <!-- ================= 左：拉拔 ================= -->
+  <text class="lb" x="170" y="36" text-anchor="middle">拉拔附着力</text>
+  <text class="sm" x="170" y="56" text-anchor="middle">力 ⊥ 表面</text>
+
+  <rect class="steel" x="60" y="250" width="220" height="50"/>
+  <text class="sm" x="170" y="281" text-anchor="middle">钢基体</text>
+  <rect class="coat" x="60" y="228" width="220" height="22"/>
+  <line x1="60" y1="250" x2="280" y2="250" stroke="#c8862b" stroke-width="2"/>
+
+  <!-- 切割圈：锭子周围切开，是人为缺陷 -->
+  <line class="cut" x1="138" y1="222" x2="138" y2="250"/>
+  <line class="cut" x1="202" y1="222" x2="202" y2="250"/>
+
+  <!-- 锭子 -->
+  <rect x="142" y="174" width="56" height="54" fill="#f0ece2" stroke="#b9b3a6" stroke-width="1.2"/>
+  <rect x="146" y="202" width="48" height="26" fill="#d9d3c5"/>
+  <text class="sm" x="170" y="167" text-anchor="middle">锭子</text>
+
+  <!-- 垂直拉力 -->
+  <line class="gold" x1="170" y1="160" x2="170" y2="94" marker-end="url(#ar)"/>
+  <text class="mn" x="184" y="118" fill="#c8862b">P</text>
+  <text class="sm" x="184" y="136" fill="#a8661e">单位 MPa</text>
+
+  <text class="kd" x="290" y="244" text-anchor="start">涂层</text>
+  <line x1="282" y1="240" x2="288" y2="240" stroke="#1f4e5f" stroke-width="1"/>
+  <text class="kd" x="212" y="214" text-anchor="start" fill="#c0392b">切割圈</text>
+  <line x1="208" y1="219" x2="200" y2="227" stroke="#c0392b" stroke-width="1"/>
+
+  <text class="sm" x="170" y="344" text-anchor="middle">结果：一个应力值</text>
+  <text class="sm" x="170" y="364" text-anchor="middle">单位面积揭下来要多大的劲</text>
+
+  <!-- ================= 中间 90° ================= -->
+  <line class="gold" x1="342" y1="158" x2="342" y2="106" marker-end="url(#ar)"/>
+  <line class="gold" x1="342" y1="158" x2="392" y2="158" marker-end="url(#ar)"/>
+  <path d="M342,132 L356,132 L356,144" stroke="#8a8377" stroke-width="1.2" fill="none"/>
+  <text class="lb" x="366" y="186" text-anchor="middle" font-size="16" fill="#8a8377">90°</text>
+
+  <!-- ================= 右：阴极剥离 ================= -->
+  <text class="lb" x="510" y="36" text-anchor="middle">阴极剥离</text>
+  <text class="sm" x="510" y="56" text-anchor="middle">裂纹 ∥ 界面</text>
+
+  <rect class="steel" x="400" y="250" width="220" height="50"/>
+  <text class="sm" x="412" y="288" text-anchor="start">钢基体</text>
+  <rect class="coat" x="400" y="228" width="220" height="22"/>
+  <line x1="400" y1="250" x2="620" y2="250" stroke="#c8862b" stroke-width="2"/>
+
+  <!-- 划痕：起始缺陷 -->
+  <rect x="498" y="226" width="13" height="26" fill="#fff" stroke="#c0392b" stroke-width="1.5"/>
+  <text class="sm" x="504" y="176" text-anchor="middle" fill="#c0392b">划痕</text>
+
+  <!-- 已剥离区：界面被打开的一段 -->
+  <path class="fnt" d="M440,252 L440,272 L570,272 L570,252"/>
+
+  <!-- 推进方向 -->
+  <line class="gold" x1="514" y1="196" x2="574" y2="196" marker-end="url(#ar)"/>
+  <line class="gold" x1="494" y1="196" x2="434" y2="196" marker-end="url(#ar)"/>
+
+  <!-- r 标尺 -->
+  <line x1="504" y1="318" x2="570" y2="318" stroke="#c8862b" stroke-width="1.2"/>
+  <line x1="504" y1="313" x2="504" y2="323" stroke="#c8862b" stroke-width="1.2"/>
+  <line x1="570" y1="313" x2="570" y2="323" stroke="#c8862b" stroke-width="1.2"/>
+  <text class="mn" x="535" y="338" text-anchor="middle" fill="#c8862b">r</text>
+  <text class="sm" x="550" y="338" text-anchor="start" fill="#a8661e">mm / 天</text>
+
+  <text class="sm" x="510" y="364" text-anchor="middle">结果：一个长度加一个时间</text>
+
+  <text class="kd" x="630" y="244" text-anchor="start">涂层</text>
+  <line x1="622" y1="240" x2="628" y2="240" stroke="#1f4e5f" stroke-width="1"/>
+</svg>

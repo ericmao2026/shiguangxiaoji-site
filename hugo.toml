@@ -1,0 +1,66 @@
+# ============================================================
+# 个人站点配置 · 改域名只需改 baseURL 一处
+# ============================================================
+baseURL = "https://shiguangxiaoji.com/"
+locale = "zh-cn"
+defaultContentLanguage = "zh"
+title = "毛强强学习心得"   # 与 ICP 备案的「网站名称」逐字一致，不改
+enableRobotsTXT = true
+hasCJKLanguage = true
+summaryLength = 80
+timeZone = "Asia/Shanghai"
+
+# 无第三方主题，模板全部在 layouts/ 内，零依赖
+
+[pagination]
+  pagerSize = 20
+
+[params]
+  author = "毛强强"
+  slogan = "让数据说话，让判断署名。"
+  description = "腐蚀与防护、涂层失效与评价方法的学习笔记。只写公开文献与通用方法，不写任何一家公司的具体工作。"
+  email = "190653819@qq.com"   # 填了即出现在页脚（mailto 链接）；留空则整段不渲染
+  since = "2026"
+
+  # 备案号（备案通过后填，留空则页脚不显示这一行）
+  # ICP 号必须做成超链接指向工信部系统，只写号不加链接可能被判「展示不规范」
+  icp    = "苏ICP备2026084134号-1"
+  gongan = "苏公网安备32050602014823号"   # 2026-11-04 通过；与公安平台下发原文逐字一致（号内无空格），14 位数字自动提取做查询链接
+
+[markup.goldmark.renderer]
+  unsafe = false
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
+
+[markup.highlight]
+  style = "github"
+  noClasses = true
+
+# ------------------------------------------------------------
+# 栏目状态（2026-11-26）
+#   方法库：已恢复公开（7 篇「基础计算」系列陆续上线）
+#   公开课题：继续隐藏，栏目为空。恢复时解开下面 projects 的 [[menu.main]]，
+#            把 content/projects/_index.md 的 draft 改回 false，
+#            并取消 layouts/index.html 中对应的 gate 卡片注释
+# ------------------------------------------------------------
+[[menu.main]]
+  name = "方法库"
+  pageRef = "/methods"
+  weight = 10
+
+# [[menu.main]]
+#   name = "公开课题"
+#   pageRef = "/projects"
+#   weight = 20
+
+[[menu.main]]
+  name = "笔记"
+  pageRef = "/notes"
+  weight = 30
+
+[[menu.main]]
+  name = "关于"
+  pageRef = "/about"
+  weight = 40

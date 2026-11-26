@@ -1,0 +1,24 @@
+<footer class="site-foot">
+  {{- $y := string now.Year -}}
+  {{- $since := string site.Params.since -}}
+  <div class="wrap">
+    <span>© {{ if eq $since $y }}{{ $y }}{{ else }}{{ $since }}–{{ $y }}{{ end }} {{ site.Params.author }}　·　文字站，无追踪、无广告</span>
+    <span>
+      {{- with site.Params.email }}<a href="mailto:{{ . }}">{{ . }}</a>　·　{{ end -}}
+      <b>每一步都留证据</b>
+    </span>
+  </div>
+  {{- if or site.Params.icp site.Params.gongan }}
+  <div class="wrap beian">
+    {{- with site.Params.icp }}
+    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener nofollow">{{ . }}</a>
+    {{- end }}
+    {{- $g := site.Params.gongan }}
+    {{- with $g }}
+    {{- $code := "" }}
+    {{- range findRE "[0-9]{8,}" . }}{{ $code = . }}{{ break }}{{ end }}
+    <a href="https://beian.mps.gov.cn/#/query/webSearch?code={{ $code }}" target="_blank" rel="noopener nofollow"><img class="beian-ico" src="{{ "images/gongan-icon.png" | relURL }}" alt="" width="14" height="16">{{ . }}</a>
+    {{- end }}
+  </div>
+  {{- end }}
+</footer>

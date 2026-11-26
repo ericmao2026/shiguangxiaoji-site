@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="wrap">
+  <div class="hero">
+    <h1>404 · 这里没有内容</h1>
+    <p>链接可能改过，或者这篇文章还没写。下面是站内入口。</p>
+  </div>
+  <div class="gates">
+    <a class="gate" href="{{ "/methods/" | relURL }}"><b>方法库</b><span>评价方法、测试矩阵、数据口径</span></a>
+    <a class="gate" href="{{ "/projects/" | relURL }}"><b>公开课题</b><span>文献复现、标准比对、公开数据重分析</span></a>
+    <a class="gate" href="{{ "/notes/" | relURL }}"><b>笔记</b><span>标准精读、术语辨析、失效案例</span></a>
+  </div>
+  <p style="margin-top:26px"><a href="{{ "/" | relURL }}">← 回首页</a></p>
+</div>
+{{ end }}

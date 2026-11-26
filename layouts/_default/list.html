@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="wrap">
+
+  <div class="hero">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </div>
+
+  {{ with .Content }}<div class="post-body" style="margin-bottom:26px;">{{ . }}</div>{{ end }}
+
+  {{- if .Pages }}
+  <ul class="post-list">
+    {{- range .Pages.ByDate.Reverse }}
+    <li>
+      <span class="date">{{ .Date.Format "2006-01-02" }}</span>
+      <span class="body">
+        <a class="t" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="ab">{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 70 "" }}{{ end }}</span>
+      </span>
+    </li>
+    {{- end }}
+  </ul>
+  {{- else }}
+  <p style="color:#6b7c84;font-size:14px;">这个栏目还没有文章。</p>
+  {{- end }}
+
+</div>
+{{ end }}

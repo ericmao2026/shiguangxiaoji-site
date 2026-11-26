@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Hugo 启动器：把长路径藏起来，用法与官方 hugo 完全一致
+#   ./bin/hugo server -D     本地预览（含草稿）
+#   ./bin/hugo new notes/x.md  新建文章
+#   ./bin/hugo --minify        构建
+exec "$HOME/.workbuddy/binaries/node/workspace/node_modules/hugo-bin/vendor/hugo" "$@"

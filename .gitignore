@@ -1,0 +1,39 @@
+# ===== Hugo 构建产物（由 deploy.sh 生成，不进版本库）=====
+public/
+resources/
+.hugo_build.lock
+
+# ===== 素材卡生成物（PDF 二进制与残留临时文件，只收 .md / .html 源）=====
+素材卡/*.pdf
+素材卡/*.pdf.tmp
+素材卡/*.tmp
+
+# ===== 系统垃圾 =====
+.DS_Store
+._*
+*.swp
+
+# ===== 部署与凭据（不进版本库）=====
+*.pem
+*.key
+deploy/*.log
+deploy/.deploy.env
+
+# ===== 内部运营文档（排期与选题规划，不进公开仓库）=====
+上线清单_备案通过后.md
+发文总清单_*.md
+发文计划_*.md
+发表顺序_*.md
+选题池_*.md
+技术站日历.ics
+
+# ===== 内部素材源（不参与 Hugo 构建）=====
+素材卡/
+
+# ===== 未发布草稿（draft: true，暂不公开，本地保留）=====
+content/notes/degradation-words.md
+content/notes/denominator-first.md
+content/methods/conclusion-boundary.md
+content/methods/dh2000-not-pass-fail.md
+content/methods/outdoor-pv-three-checkpoints.md
+content/projects/sealant-npi.md

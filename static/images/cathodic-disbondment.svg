@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" width="680" height="520" role="img" aria-label="阴极剥离机理示意与三种测试方法的剥离半径对比">
+  <defs>
+    <style>
+      .title{font:600 15px "PingFang SC","Microsoft YaHei",sans-serif;fill:#1f4e5f}
+      .lbl{font:13px "PingFang SC","Microsoft YaHei",sans-serif;fill:#22333a}
+      .name{font:12.5px "PingFang SC","Microsoft YaHei",sans-serif;fill:#22333a}
+      .cond{font:10.5px "PingFang SC","Microsoft YaHei",sans-serif;fill:#8a8a8a}
+      .rx{font:9.5px "PingFang SC","Microsoft YaHei",sans-serif;fill:#8a5a10}
+      .note{font:10.5px "PingFang SC","Microsoft YaHei",sans-serif;fill:#8a8a8a}
+      .tick{font:11px "PingFang SC","Microsoft YaHei",sans-serif;fill:#7a7a7a}
+      .val{font:12px "PingFang SC","Microsoft YaHei",sans-serif;fill:#1f4e5f}
+      .dimtxt{font:11px "PingFang SC","Microsoft YaHei",sans-serif;fill:#c8862b}
+    </style>
+    <marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,1 L9,5 L0,9 z" fill="#1f4e5f"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="680" height="520" fill="#ffffff"/>
+
+  <!-- ============ 上：缺陷剖面 ============ -->
+  <text class="title" x="20" y="28">① 划伤处的界面上，碱是怎么造出来的</text>
+
+  <rect x="50" y="100" width="580" height="90" fill="#e3ecef" stroke="#9fb6bd" stroke-width="1.2"/>
+  <text class="lbl" x="66" y="152" fill="#3d5a64">涂层</text>
+
+  <rect x="50" y="190" width="580" height="60" fill="#cdc6b8" stroke="#a89f8d" stroke-width="1.2"/>
+  <text class="lbl" x="66" y="226" fill="#4a4438">钢基体</text>
+
+  <!-- 缺陷（涂层缺口） -->
+  <rect x="255" y="100" width="170" height="90" fill="#f2f8fa" stroke="#7fa3ad" stroke-width="1" stroke-dasharray="4 3"/>
+  <text class="rx" x="340" y="119" text-anchor="middle">阴极</text>
+  <text class="rx" x="340" y="135" text-anchor="middle">O₂+2H₂O+4e⁻→4OH⁻</text>
+  <text class="rx" x="340" y="163" text-anchor="middle">阳极</text>
+  <text class="rx" x="340" y="179" text-anchor="middle">Fe→Fe²⁺+2e⁻</text>
+
+  <!-- 已剥离区（界面高 pH 带） -->
+  <rect x="170" y="176" width="85" height="14" fill="#c8862b" fill-opacity="0.22"/>
+  <rect x="425" y="176" width="85" height="14" fill="#c8862b" fill-opacity="0.22"/>
+  <text class="dimtxt" x="247" y="172" text-anchor="end">OH⁻</text>
+  <text class="dimtxt" x="433" y="172">OH⁻</text>
+
+  <!-- 剥离半径标注 -->
+  <line x1="170" y1="126" x2="255" y2="126" stroke="#c8862b" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="170" y1="120" x2="170" y2="132" stroke="#c8862b" stroke-width="1"/>
+  <line x1="255" y1="120" x2="255" y2="132" stroke="#c8862b" stroke-width="1"/>
+  <text class="dimtxt" x="212" y="118" text-anchor="middle">r</text>
+
+  <line x1="425" y1="126" x2="510" y2="126" stroke="#c8862b" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="425" y1="120" x2="425" y2="132" stroke="#c8862b" stroke-width="1"/>
+  <line x1="510" y1="120" x2="510" y2="132" stroke="#c8862b" stroke-width="1"/>
+  <text class="dimtxt" x="467" y="118" text-anchor="middle">r</text>
+
+  <!-- Na+ 迁移 -->
+  <line x1="130" y1="150" x2="247" y2="150" stroke="#1f4e5f" stroke-width="1.4" marker-end="url(#ar2)"/>
+  <text class="lbl" x="122" y="154" text-anchor="end" fill="#1f4e5f">Na⁺</text>
+  <line x1="550" y1="150" x2="433" y2="150" stroke="#1f4e5f" stroke-width="1.4" marker-end="url(#ar2)"/>
+  <text class="lbl" x="558" y="154" fill="#1f4e5f">Na⁺</text>
+
+  <!-- pH 说明 -->
+  <line x1="460" y1="204" x2="460" y2="190" stroke="#c8862b" stroke-width="1"/>
+  <rect x="392" y="204" width="136" height="24" rx="12" fill="#ffffff" stroke="#c8862b" stroke-width="1"/>
+  <text class="dimtxt" x="460" y="220" text-anchor="middle">界面 pH 10–14</text>
+
+  <text class="note" x="50" y="270">r＝剥离半径：从划伤边缘沿界面量到剥离前沿。这段距离内涂层完好，只是不再贴着钢。</text>
+
+  <!-- ============ 下：三种方法对比 ============ -->
+  <text class="title" x="20" y="308">② 同一批涂层，三种方法测出来的 r 差一个数量级</text>
+  <text class="note" x="20" y="326">横轴：剥离半径，mm。涂层为 800–900 μm 双组份液体环氧。</text>
+
+  <line x1="190" y1="440" x2="620" y2="440" stroke="#b9b3a6" stroke-width="1.2"/>
+  <g class="tick">
+    <text x="190" y="456" text-anchor="middle">0</text>
+    <text x="333" y="456" text-anchor="middle">10</text>
+    <text x="477" y="456" text-anchor="middle">20</text>
+    <text x="620" y="456" text-anchor="middle">30</text>
+  </g>
+
+  <!-- ISO 15711 -->
+  <rect x="190" y="330" width="394" height="22" fill="#c8862b"/>
+  <text class="name" x="20" y="340">ISO 15711</text>
+  <text class="cond" x="20" y="355">1.05 V / 海水 / 182 d</text>
+  <text class="val" x="592" y="346">≈27.5</text>
+
+  <!-- ASTM G95 -->
+  <rect x="190" y="368" width="72" height="22" fill="#2f6b7f"/>
+  <text class="name" x="20" y="378">ASTM G95</text>
+  <text class="cond" x="20" y="393">3.0 V / 3% NaCl / 90 d</text>
+  <text class="val" x="270" y="384">≈5</text>
+
+  <!-- NF A 49-711 -->
+  <rect x="190" y="406" width="43" height="22" fill="#6f9aa8"/>
+  <line x1="225" y1="417" x2="241" y2="417" stroke="#22333a" stroke-width="1.4"/>
+  <line x1="225" y1="412" x2="225" y2="422" stroke="#22333a" stroke-width="1.4"/>
+  <line x1="241" y1="412" x2="241" y2="422" stroke="#22333a" stroke-width="1.4"/>
+  <text class="name" x="20" y="416">NF A 49-711</text>
+  <text class="cond" x="20" y="431">65 ℃ / 28 d</text>
+  <text class="val" x="249" y="422">≈2.5–3.5</text>
+
+  <text class="note" x="190" y="484">数据出自 Holub、Wong &amp; Tan, NACE-07022（CORROSION 2007）表 1、表 2。</text>
+  <text class="note" x="190" y="500">三组是不同试样的统计结果，不是同一条时间序列上取的点。</text>
+</svg>

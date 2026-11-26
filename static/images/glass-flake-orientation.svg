@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 350" width="680" height="350" role="img" aria-label="玻璃鳞片取向对扩散路径的影响">
+  <rect x="0" y="0" width="680" height="350" fill="#fff"/>
+  <defs>
+    <style>
+      .h{font:14px "PingFang SC","Microsoft YaHei",sans-serif;fill:#1f4e5f}
+      .s{font:11.5px "PingFang SC","Microsoft YaHei",sans-serif;fill:#6b6459}
+      .g{font:12px "PingFang SC","Microsoft YaHei",sans-serif;fill:#8a5a10}
+      .w{font:10.5px "PingFang SC","Microsoft YaHei",sans-serif;fill:#8b8377}
+    </style>
+    <marker id="pa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c8862b"/>
+    </marker>
+  </defs>
+
+  <!-- ===== 面板 1：无鳞片 ===== -->
+  <text class="h" x="122" y="28" text-anchor="middle">无鳞片</text>
+  <rect x="40" y="48" width="164" height="150" fill="#eef4f5" stroke="#d8e2e4"/>
+  <rect x="40" y="198" width="164" height="16" fill="#4a4a4a"/>
+  <path d="M122,56 L122,194" fill="none" stroke="#c8862b" stroke-width="2" marker-end="url(#pa)"/>
+  <text class="s" x="122" y="232" text-anchor="middle">τ ≈ 1</text>
+
+  <!-- ===== 面板 2：乱取向 ===== -->
+  <text class="h" x="340" y="28" text-anchor="middle">鳞片乱取向</text>
+  <rect x="258" y="48" width="164" height="150" fill="#eef4f5" stroke="#d8e2e4"/>
+  <rect x="258" y="198" width="164" height="16" fill="#4a4a4a"/>
+  <g fill="#1f4e5f">
+    <rect x="253" y="83" width="55" height="4" transform="rotate(-25 280 85)"/>
+    <rect x="323" y="98" width="55" height="4" transform="rotate(25 350 100)"/>
+    <rect x="248" y="128" width="55" height="4" transform="rotate(20 275 130)"/>
+    <rect x="323" y="153" width="55" height="4" transform="rotate(-20 350 155)"/>
+  </g>
+  <path d="M310,56 L310,118 L400,118 L400,175 L350,175 L350,194"
+        fill="none" stroke="#c8862b" stroke-width="2" marker-end="url(#pa)"/>
+  <text class="s" x="340" y="232" text-anchor="middle">τ 明显缩水</text>
+
+  <!-- ===== 面板 3：平行排列 ===== -->
+  <text class="h" x="558" y="28" text-anchor="middle">平行排列</text>
+  <rect x="476" y="48" width="164" height="150" fill="#eef4f5" stroke="#d8e2e4"/>
+  <rect x="476" y="198" width="164" height="16" fill="#4a4a4a"/>
+  <g fill="#1f4e5f">
+    <!-- 层1 y=80 缝 536-564 -->
+    <rect x="476" y="80" width="60" height="4"/>
+    <rect x="564" y="80" width="76" height="4"/>
+    <!-- 层2 y=100 缝 576-606 -->
+    <rect x="476" y="100" width="100" height="4"/>
+    <rect x="606" y="100" width="34" height="4"/>
+    <!-- 层3 y=120 缝 522-534 与 576-606 -->
+    <rect x="476" y="120" width="46" height="4"/>
+    <rect x="534" y="120" width="42" height="4"/>
+    <rect x="606" y="120" width="34" height="4"/>
+    <!-- 层4 y=140 缝 516-544 -->
+    <rect x="476" y="140" width="40" height="4"/>
+    <rect x="544" y="140" width="96" height="4"/>
+    <!-- 层5 y=160 缝 556-584 -->
+    <rect x="476" y="160" width="80" height="4"/>
+    <rect x="584" y="160" width="56" height="4"/>
+  </g>
+  <path d="M550,56 L550,90 L591,90 L591,130 L530,130 L530,150 L570,150 L570,194"
+        fill="none" stroke="#c8862b" stroke-width="2" marker-end="url(#pa)"/>
+  <text class="s" x="558" y="232" text-anchor="middle">τ ≈ 6</text>
+
+  <!-- 图例 -->
+  <line x1="40" y1="262" x2="68" y2="262" stroke="#c8862b" stroke-width="2"/>
+  <text class="w" x="74" y="266">水与离子的扩散路径</text>
+  <rect x="248" y="259" width="22" height="4" fill="#1f4e5f"/>
+  <text class="w" x="276" y="266">玻璃鳞片</text>
+  <rect x="378" y="256" width="22" height="12" fill="#4a4a4a"/>
+  <text class="w" x="406" y="266">钢材</text>
+
+  <!-- 底部总注 -->
+  <text class="g" x="340" y="300" text-anchor="middle">同一膜厚、同一含量，只改取向：路径延长从约 1 倍到约 6 倍</text>
+  <text class="w" x="340" y="322" text-anchor="middle">示意图。τ 按 Nielsen 模型 τ = 1 +（L / 2W）·Vf 估算，取 L / W = 100、Vf = 0.10</text>
+</svg>

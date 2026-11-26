@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" width="680" height="400" role="img" aria-label="相对湿度与大气腐蚀速率关系示意图">
+  <defs>
+    <style>
+      .ax{stroke:#b9b3a6;stroke-width:1.2}
+      .grid{stroke:#ece8df;stroke-width:1}
+      .tick{font:13px -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;fill:#7a7a7a}
+      .lbl{font:15px -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;fill:#1f4e5f}
+      .note{font:12px -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;fill:#8a8a8a}
+      .leg{font:13px -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;fill:#3d5a64}
+      .c1{fill:none;stroke:#1f4e5f;stroke-width:2.6;stroke-linecap:round}
+      .c2{fill:none;stroke:#c8862b;stroke-width:2.6;stroke-linecap:round}
+      .dash1{stroke:#c8862b;stroke-width:1.4;stroke-dasharray:5 4}
+      .dash2{stroke:#1f4e5f;stroke-width:1.4;stroke-dasharray:2 4}
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="680" height="400" fill="#ffffff"/>
+
+  <!-- 网格 -->
+  <g class="grid">
+    <line x1="80" y1="320" x2="620" y2="320"/>
+    <line x1="80" y1="255" x2="620" y2="255"/>
+    <line x1="80" y1="190" x2="620" y2="190"/>
+    <line x1="80" y1="125" x2="620" y2="125"/>
+    <line x1="80" y1="70"  x2="620" y2="70"/>
+  </g>
+
+  <!-- 坐标轴 -->
+  <line class="ax" x1="80" y1="70" x2="80" y2="320"/>
+  <line class="ax" x1="80" y1="320" x2="620" y2="320"/>
+
+  <!-- 关键湿度竖线 -->
+  <line class="dash1" x1="311" y1="76" x2="311" y2="320"/>
+  <line class="dash2" x1="466" y1="76" x2="466" y2="320"/>
+
+  <!-- 曲线 1：清洁表面 -->
+  <path class="c1" d="M108,308 C160,306 210,304 246,300 C280,296 296,290 311,278 C340,254 380,232 420,212 C462,190 510,160 560,124 C588,104 604,88 620,74"/>
+
+  <!-- 曲线 2：有可溶盐的表面 -->
+  <path class="c2" d="M108,300 C150,286 190,272 230,256 C272,238 320,214 366,190 C414,166 466,142 516,116 C560,94 594,78 620,64"/>
+
+  <!-- x 轴刻度 -->
+  <g class="tick" text-anchor="middle">
+    <text x="80"  y="342">30</text>
+    <text x="157" y="342">40</text>
+    <text x="234" y="342">50</text>
+    <text x="311" y="342">60</text>
+    <text x="389" y="342">70</text>
+    <text x="466" y="342">80</text>
+    <text x="543" y="342">90</text>
+    <text x="620" y="342">100</text>
+  </g>
+  <text class="tick" x="350" y="368" text-anchor="middle">相对湿度 / %</text>
+
+  <!-- y 轴说明（竖排） -->
+  <text class="tick" transform="translate(28,200) rotate(-90)" text-anchor="middle">腐蚀速率（示意）</text>
+
+  <!-- 60% 标注 -->
+  <text class="lbl" x="311" y="28" text-anchor="middle" font-weight="700">60%</text>
+  <text class="note" x="311" y="48" text-anchor="middle">2.1 nm 毛细孔开始凝聚</text>
+
+  <!-- 80% 标注 -->
+  <text class="lbl" x="466" y="28" text-anchor="middle" font-weight="700">80%</text>
+  <text class="note" x="466" y="48" text-anchor="middle">湿润时间口径</text>
+
+  <!-- 图例（左上空白区） -->
+  <g>
+    <line x1="96" y1="102" x2="136" y2="102" stroke="#1f4e5f" stroke-width="2.6" stroke-linecap="round"/>
+    <text class="leg" x="146" y="107">清洁表面</text>
+
+    <line x1="96" y1="132" x2="136" y2="132" stroke="#c8862b" stroke-width="2.6" stroke-linecap="round"/>
+    <text class="leg" x="146" y="137">有可溶盐的表面</text>
+  </g>
+</svg>

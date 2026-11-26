@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="wrap">
+  <article class="post">
+    <div class="post-head">
+      <h1>{{ .Title }}</h1>
+      <div class="post-meta">
+        {{ .Date.Format "2006-01-02" }}
+        {{ with .Params.section_label }}　·　{{ . }}{{ end }}
+        {{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
+      </div>
+    </div>
+
+    <div class="post-body">
+      {{ .Content }}
+    </div>
+
+    <div class="post-foot">
+      <div class="post-nav">
+        <span>
+          {{ with .PrevInSection }}← <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+        </span>
+        <span>
+          {{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> →{{ end }}
+        </span>
+      </div>
+    </div>
+  </article>
+</div>
+{{ end }}

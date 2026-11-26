@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="wrap">
+
+  <div class="hero">
+    <h1>{{ site.Params.slogan }}</h1>
+    <p>{{ site.Params.description }}</p>
+  </div>
+
+  <div class="gates">
+    {{- /* 2026-11-26 恢复「方法库」入口；「公开课题」仍为空，继续隐藏。 */ -}}
+    <a class="gate" href="/methods/">
+      <b>方法库</b>
+      <span>评价方法、测试矩阵、数据口径。这里回答「怎么判」。全站最厚的部分。</span>
+    </a>
+    {{- /*
+    <a class="gate" href="/projects/">
+      <b>公开课题</b>
+      <span>文献复现、标准比对、公开数据重分析。可复现，可验证。</span>
+    </a>
+    */ -}}
+    <a class="gate" href="{{ "/notes/" | relURL }}">
+      <b>笔记</b>
+      <span>标准精读、失效案例、术语辨析。短篇，随手记。</span>
+    </a>
+  </div>
+
+  <div class="sec-title">最 新 更 新</div>
+  {{- $posts := where site.RegularPages "Section" "in" (slice "methods" "projects" "notes") }}
+  {{- if $posts }}
+  <ul class="post-list">
+    {{- range $posts.ByDate.Reverse | first 10 }}
+    <li>
+      <span class="date">{{ .Date.Format "2006-01-02" }}</span>
+      <span class="body">
+        <a class="t" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="ab">{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 70 "" }}{{ end }}</span>
+      </span>
+    </li>
+    {{- end }}
+  </ul>
+  {{- else }}
+  <p style="color:#6b7c84;font-size:14px;">正在写。第一批围绕涂层失效的四种模式与 ISO 12944 的分级逻辑，陆续放上来。</p>
+  {{- end }}
+
+</div>
+{{ end }}

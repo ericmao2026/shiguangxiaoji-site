@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img" aria-label="片径与厚度同时减半时长径比不变">
+  <rect x="0" y="0" width="680" height="300" fill="#fff"/>
+  <defs>
+    <style>
+      .h{font:13px "PingFang SC","Microsoft YaHei",sans-serif;fill:#1f4e5f}
+      .s{font:12px "PingFang SC","Microsoft YaHei",sans-serif;fill:#6b6459}
+      .g{font:13px "PingFang SC","Microsoft YaHei",sans-serif;fill:#8a5a10}
+      .w{font:11px "PingFang SC","Microsoft YaHei",sans-serif;fill:#8b8377}
+    </style>
+  </defs>
+
+  <!-- 左：原片 -->
+  <text class="h" x="140" y="44" text-anchor="middle">原片</text>
+  <rect x="60" y="100" width="160" height="16" fill="#1f4e5f" rx="1"/>
+  <line x1="60" y1="132" x2="220" y2="132" stroke="#c8862b" stroke-width="1"/>
+  <line x1="60" y1="128" x2="60" y2="136" stroke="#c8862b" stroke-width="1"/>
+  <line x1="220" y1="128" x2="220" y2="136" stroke="#c8862b" stroke-width="1"/>
+  <text class="g" x="140" y="150" text-anchor="middle">片径 L</text>
+  <line x1="48" y1="100" x2="48" y2="116" stroke="#c8862b" stroke-width="1"/>
+  <line x1="44" y1="100" x2="52" y2="100" stroke="#c8862b" stroke-width="1"/>
+  <line x1="44" y1="116" x2="52" y2="116" stroke="#c8862b" stroke-width="1"/>
+  <text class="g" x="42" y="112" text-anchor="end">厚 W</text>
+  <text class="s" x="140" y="186" text-anchor="middle">L/W = 10</text>
+
+  <!-- 中：一起减半 -->
+  <text class="h" x="340" y="44" text-anchor="middle">一起减半</text>
+  <rect x="300" y="104" width="80" height="8" fill="#1f4e5f" rx="1"/>
+  <text class="s" x="340" y="186" text-anchor="middle">L/W = 10</text>
+  <text class="g" x="340" y="206" text-anchor="middle">没变</text>
+
+  <!-- 右：只减厚度 -->
+  <text class="h" x="540" y="44" text-anchor="middle">只减厚度</text>
+  <rect x="460" y="104" width="160" height="8" fill="#1f4e5f" rx="1"/>
+  <text class="s" x="540" y="186" text-anchor="middle">L/W = 20</text>
+  <text class="g" x="540" y="206" text-anchor="middle">翻倍</text>
+
+  <!-- 分隔竖线 -->
+  <line x1="255" y1="60" x2="255" y2="216" stroke="#e0d9cc" stroke-width="1"/>
+  <line x1="432" y1="60" x2="432" y2="216" stroke="#e0d9cc" stroke-width="1"/>
+
+  <!-- 底部说明 -->
+  <text class="w" x="340" y="256" text-anchor="middle">磨细的时候，片径和厚度往往一起变小——比值可能原地不动。</text>
+  <text class="w" x="340" y="276" text-anchor="middle">示意图，图中长宽按比例绘制。</text>
+</svg>

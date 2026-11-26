@@ -1,0 +1,16 @@
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="{{ "/" | relURL }}">
+      {{ site.Title }}
+      <small>{{ site.Params.slogan }}</small>
+    </a>
+    <nav class="nav">
+      {{- $cur := .RelPermalink -}}
+      {{- range site.Menus.main }}
+        {{- $url := .URL -}}
+        {{- if .Page }}{{ $url = .Page.RelPermalink }}{{ end }}
+        <a href="{{ $url }}"{{ if and (ne $url "/") (hasPrefix $cur $url) }} class="on"{{ end }}>{{ .Name }}</a>
+      {{- end }}
+    </nav>
+  </div>
+</header>

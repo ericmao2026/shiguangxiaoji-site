@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 524" width="680" height="524" role="img" aria-label="富锌底漆两阶段作用示意图：上半场靠锌粒导电网络，下半场腐蚀产物封孔转为屏障">
+  <defs>
+    <style>
+      .h{font:15px -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;fill:#1f4e5f}
+      .s{font:12px -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;fill:#6f7a7e}
+      .k{font:12px -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;fill:#1f4e5f}
+      .g{font:12px -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;fill:#a8661e}
+      .r{font:12px -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;fill:#c0392b}
+      .steel{fill:#cfc9bb}
+      .bind{fill:#eef2f3;stroke:#d8d2c4;stroke-width:1}
+      .zn{fill:#2f6070}
+      .prod{fill:#e2b877;stroke:#c8862b;stroke-width:.8}
+      .e{stroke:#c8862b;stroke-width:1.8;fill:none}
+    </style>
+    <marker id="ag" markerWidth="8" markerHeight="8" refX="6.5" refY="2.8" orient="auto">
+      <path d="M0,0 L6.5,2.8 L0,5.6 z" fill="#c8862b"/>
+    </marker>
+    <marker id="ax" markerWidth="8" markerHeight="8" refX="6.5" refY="2.8" orient="auto">
+      <path d="M0,0 L6.5,2.8 L0,5.6 z" fill="#8a8377"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="680" height="524" fill="#fff"/>
+
+  <!-- ================= 上半场 ================= -->
+  <text class="h" x="50" y="46">上半场 · 月</text>
+  <text class="s" x="50" y="66">锌粒彼此顶着，也顶着钢 —— 电子有路可走</text>
+
+  <!-- 涂层基体 -->
+  <rect class="bind" x="50" y="150" width="580" height="66"/>
+
+  <!-- 锌粒网格：三行，行内与行间都相切/微叠 -->
+  <g class="zn">
+    <circle cx="66" cy="164" r="12"/><circle cx="90" cy="164" r="12"/><circle cx="114" cy="164" r="12"/><circle cx="138" cy="164" r="12"/><circle cx="162" cy="164" r="12"/><circle cx="186" cy="164" r="12"/><circle cx="210" cy="164" r="12"/><circle cx="234" cy="164" r="12"/><circle cx="258" cy="164" r="12"/><circle cx="282" cy="164" r="12"/><circle cx="306" cy="164" r="12"/><circle cx="330" cy="164" r="12"/><circle cx="354" cy="164" r="12"/><circle cx="378" cy="164" r="12"/><circle cx="402" cy="164" r="12"/><circle cx="426" cy="164" r="12"/><circle cx="450" cy="164" r="12"/><circle cx="474" cy="164" r="12"/><circle cx="498" cy="164" r="12"/><circle cx="522" cy="164" r="12"/><circle cx="546" cy="164" r="12"/><circle cx="570" cy="164" r="12"/><circle cx="594" cy="164" r="12"/>
+    <circle cx="78" cy="186" r="12"/><circle cx="102" cy="186" r="12"/><circle cx="126" cy="186" r="12"/><circle cx="150" cy="186" r="12"/><circle cx="174" cy="186" r="12"/><circle cx="198" cy="186" r="12"/><circle cx="222" cy="186" r="12"/><circle cx="246" cy="186" r="12"/><circle cx="270" cy="186" r="12"/><circle cx="294" cy="186" r="12"/><circle cx="318" cy="186" r="12"/><circle cx="342" cy="186" r="12"/><circle cx="366" cy="186" r="12"/><circle cx="390" cy="186" r="12"/><circle cx="414" cy="186" r="12"/><circle cx="438" cy="186" r="12"/><circle cx="462" cy="186" r="12"/><circle cx="486" cy="186" r="12"/><circle cx="510" cy="186" r="12"/><circle cx="534" cy="186" r="12"/><circle cx="558" cy="186" r="12"/><circle cx="582" cy="186" r="12"/>
+    <circle cx="66" cy="208" r="12"/><circle cx="90" cy="208" r="12"/><circle cx="114" cy="208" r="12"/><circle cx="138" cy="208" r="12"/><circle cx="162" cy="208" r="12"/><circle cx="186" cy="208" r="12"/><circle cx="210" cy="208" r="12"/><circle cx="234" cy="208" r="12"/><circle cx="258" cy="208" r="12"/><circle cx="282" cy="208" r="12"/><circle cx="306" cy="208" r="12"/><circle cx="330" cy="208" r="12"/><circle cx="354" cy="208" r="12"/><circle cx="378" cy="208" r="12"/><circle cx="402" cy="208" r="12"/><circle cx="426" cy="208" r="12"/><circle cx="450" cy="208" r="12"/><circle cx="474" cy="208" r="12"/><circle cx="498" cy="208" r="12"/><circle cx="522" cy="208" r="12"/><circle cx="546" cy="208" r="12"/><circle cx="570" cy="208" r="12"/><circle cx="594" cy="208" r="12"/>
+  </g>
+
+  <!-- 钢基体 -->
+  <rect class="steel" x="50" y="216" width="580" height="40"/>
+  <text class="k" x="70" y="241">钢基体</text>
+
+  <!-- 划伤：裸钢作阴极 -->
+  <rect class="steel" x="500" y="150" width="44" height="66"/>
+  <line x1="500" y1="150" x2="500" y2="216" stroke="#b0a998" stroke-width="1"/>
+  <line x1="544" y1="150" x2="544" y2="216" stroke="#b0a998" stroke-width="1"/>
+  <text class="k" x="522" y="142" text-anchor="middle" fill="#c0392b">划伤</text>
+  <text class="s" x="522" y="128" text-anchor="middle" fill="#c0392b">裸钢 · 阴极</text>
+
+  <!-- 电子通路：锌 → 钢 → 划伤处裸钢 -->
+  <path class="e" d="M354,208 L354,236 L522,236 L522,206"/>
+  <path d="M516,212 L522,204 L528,212" stroke="#c8862b" stroke-width="1.8" fill="none"/>
+  <text class="g" x="374" y="254">e⁻</text>
+
+  <!-- 接触点标注 -->
+  <circle cx="330" cy="216" r="4" fill="none" stroke="#c8862b" stroke-width="1.6"/>
+  <text class="g" x="330" y="112" text-anchor="middle">锌与钢的接触点</text>
+  <line x1="330" y1="118" x2="330" y2="198" stroke="#c8862b" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- 离子通路标注 -->
+  <text class="s" x="50" y="104">孔隙里有电解液</text>
+  <text class="s" x="50" y="120">— 离子通路</text>
+
+
+  <!-- 时间箭头 -->
+  <line x1="330" y1="292" x2="330" y2="316" stroke="#8a8377" stroke-width="1.4" marker-end="url(#ax)"/>
+  <text class="s" x="342" y="311">时间：月 → 年</text>
+
+  <!-- ================= 下半场 ================= -->
+  <text class="h" x="50" y="356">下半场 · 年</text>
+  <text class="s" x="50" y="376">锌耗掉了，接触点断开 —— 留下来的产物把孔堵实</text>
+
+  <rect class="bind" x="50" y="410" width="580" height="66"/>
+
+  <!-- 残余锌粒：变小、彼此不再相切 -->
+  <g class="zn">
+    <circle cx="70" cy="426" r="8"/><circle cx="98" cy="426" r="8"/><circle cx="126" cy="426" r="8"/><circle cx="154" cy="426" r="8"/><circle cx="182" cy="426" r="8"/><circle cx="210" cy="426" r="8"/><circle cx="238" cy="426" r="8"/><circle cx="266" cy="426" r="8"/><circle cx="294" cy="426" r="8"/><circle cx="322" cy="426" r="8"/><circle cx="350" cy="426" r="8"/><circle cx="378" cy="426" r="8"/><circle cx="406" cy="426" r="8"/><circle cx="434" cy="426" r="8"/><circle cx="462" cy="426" r="8"/><circle cx="490" cy="426" r="8"/><circle cx="518" cy="426" r="8"/><circle cx="546" cy="426" r="8"/><circle cx="574" cy="426" r="8"/>
+    <circle cx="84" cy="450" r="8"/><circle cx="112" cy="450" r="8"/><circle cx="140" cy="450" r="8"/><circle cx="168" cy="450" r="8"/><circle cx="196" cy="450" r="8"/><circle cx="224" cy="450" r="8"/><circle cx="252" cy="450" r="8"/><circle cx="280" cy="450" r="8"/><circle cx="308" cy="450" r="8"/><circle cx="336" cy="450" r="8"/><circle cx="364" cy="450" r="8"/><circle cx="392" cy="450" r="8"/><circle cx="420" cy="450" r="8"/><circle cx="448" cy="450" r="8"/><circle cx="476" cy="450" r="8"/><circle cx="504" cy="450" r="8"/><circle cx="532" cy="450" r="8"/><circle cx="560" cy="450" r="8"/>
+  </g>
+
+  <!-- 腐蚀产物填孔 -->
+  <g class="prod">
+    <circle cx="84" cy="426" r="6"/><circle cx="140" cy="426" r="5"/><circle cx="196" cy="426" r="6"/><circle cx="252" cy="426" r="5"/><circle cx="308" cy="426" r="6"/><circle cx="364" cy="426" r="5"/><circle cx="420" cy="426" r="6"/><circle cx="476" cy="426" r="5"/><circle cx="532" cy="426" r="6"/>
+    <circle cx="70" cy="448" r="6"/><circle cx="126" cy="448" r="5"/><circle cx="182" cy="448" r="6"/><circle cx="238" cy="448" r="5"/><circle cx="294" cy="448" r="6"/><circle cx="350" cy="448" r="5"/><circle cx="406" cy="448" r="6"/><circle cx="462" cy="448" r="5"/><circle cx="518" cy="448" r="6"/><circle cx="574" cy="448" r="5"/>
+    <circle cx="98" cy="440" r="5"/><circle cx="154" cy="440" r="5"/><circle cx="210" cy="440" r="5"/><circle cx="266" cy="440" r="5"/><circle cx="322" cy="440" r="5"/><circle cx="378" cy="440" r="5"/><circle cx="434" cy="440" r="5"/><circle cx="490" cy="440" r="5"/><circle cx="546" cy="440" r="5"/>
+  </g>
+
+  <rect class="steel" x="50" y="476" width="580" height="40"/>
+  <text class="k" x="70" y="501">钢基体</text>
+
+  <!-- 断开标记 -->
+  <g stroke="#c0392b" stroke-width="2" fill="none">
+    <path d="M240,470 L254,484 M254,470 L240,484"/>
+    <path d="M392,470 L406,484 M406,470 L392,484"/>
+  </g>
+  <text class="r" x="300" y="502">接触断开，电子到不了钢</text>
+
+  <!-- 产物标注 -->
+  <text class="g" x="600" y="400" text-anchor="end">腐蚀产物封孔</text>
+  <line x1="566" y1="406" x2="548" y2="416" stroke="#c8862b" stroke-width="1"/>
+
+</svg>

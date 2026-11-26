@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" width="680" height="360" role="img" aria-label="锌含量与保护能力的示意关系">
+  <rect x="0" y="0" width="680" height="360" fill="#fff"/>
+  <defs>
+    <style>
+      .t{font:15px "PingFang SC","Microsoft YaHei",sans-serif;fill:#2b2b2b}
+      .s{font:12.5px "PingFang SC","Microsoft YaHei",sans-serif;fill:#6b6459}
+      .g{font:13px "PingFang SC","Microsoft YaHei",sans-serif;fill:#8a5a10}
+      .y{font:13px "PingFang SC","Microsoft YaHei",sans-serif;fill:#1f4e5f}
+      .ax{stroke:#b9b1a4;stroke-width:1.2}
+    </style>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b9b1a4"/>
+    </marker>
+  </defs>
+
+  <!-- 三个区间底色 -->
+  <rect x="141" y="40" width="186" height="240" fill="#f5f2ec"/>
+  <rect x="327" y="40" width="128" height="240" fill="#e8f0f2"/>
+  <rect x="455" y="40" width="114" height="240" fill="#fbf1e2"/>
+
+  <!-- 区间主标签 -->
+  <text class="t" x="234" y="66" text-anchor="middle">孤岛</text>
+  <text class="t" x="391" y="66" text-anchor="middle">连通</text>
+  <text class="t" x="512" y="66" text-anchor="middle">过量</text>
+
+  <!-- 曲线 -->
+  <path d="M141,252 C182,246 212,220 244,196 C272,175 292,156 322,150 C358,143 410,142 450,147 C476,151 492,168 506,190 C526,220 546,238 569,250"
+        fill="none" stroke="#1f4e5f" stroke-width="2.4"/>
+
+  <!-- 两条竖线：CPVC 与标准线 -->
+  <line x1="327" y1="40" x2="327" y2="280" stroke="#1f4e5f" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <line x1="355" y1="40" x2="355" y2="280" stroke="#c8862b" stroke-width="1.4" stroke-dasharray="5 4"/>
+
+  <!-- 轴 -->
+  <line x1="70" y1="280" x2="600" y2="280" class="ax" marker-end="url(#ar)"/>
+  <line x1="70" y1="280" x2="70" y2="34" class="ax" marker-end="url(#ar)"/>
+  <text class="s" x="636" y="320" text-anchor="end">锌质量分数 / %</text>
+  <text class="s" x="58" y="30" text-anchor="start">保护能力（示意）</text>
+
+  <!-- x 刻度 -->
+  <g class="s" text-anchor="middle">
+    <line x1="141" y1="280" x2="141" y2="285" stroke="#b9b1a4"/>
+    <text x="141" y="302">65</text>
+    <line x1="284" y1="280" x2="284" y2="285" stroke="#b9b1a4"/>
+    <text x="284" y="302">75</text>
+    <line x1="355" y1="280" x2="355" y2="285" stroke="#b9b1a4"/>
+    <text x="355" y="302">80</text>
+    <line x1="426" y1="280" x2="426" y2="285" stroke="#b9b1a4"/>
+    <text x="426" y="302">85</text>
+    <line x1="569" y1="280" x2="569" y2="285" stroke="#b9b1a4"/>
+    <text x="569" y="302">95</text>
+  </g>
+
+  <!-- 两条线的标签，错开高度 -->
+  <text class="y" x="321" y="338" text-anchor="end">CPVC · 物定的线</text>
+  <text class="g" x="362" y="338" text-anchor="start">标准 80% · 人划的线</text>
+  <line x1="327" y1="328" x2="327" y2="286" stroke="#1f4e5f" stroke-width="1"/>
+  <line x1="355" y1="328" x2="355" y2="286" stroke="#c8862b" stroke-width="1"/>
+
+  <!-- 平台区标注 -->
+  <text class="y" x="391" y="108" text-anchor="middle">最平的一段：</text>
+  <text class="y" x="391" y="126" text-anchor="middle">再加也不更保护</text>
+
+  <!-- 右侧下降说明 -->
+  <text class="g" x="512" y="244" text-anchor="middle">附着力 ↓</text>
+  <text class="g" x="512" y="262" text-anchor="middle">开裂风险 ↑</text>
+</svg>
